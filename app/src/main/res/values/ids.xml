@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textViewTitle" type="id" />
+    <item name="editTextEmail" type="id" />
+    <item name="editTextPassword" type="id" />
+    <item name="buttonSignIn" type="id" />
+    <item name="buttonForgotPassword" type="id" />
+    <item name="buttonLayout" type="id" />
+    <item name="buttonSignUp" type="id" />
+</resources>

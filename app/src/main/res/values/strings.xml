@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">project</string>
+
+    <string name="signinbtn"><u><b>sign up</b></u></string>
+    <string name="fpbtn"><u><b>forgot password</b></u></string>
+
+</resources>

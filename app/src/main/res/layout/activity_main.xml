@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#805F5C5C"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/bungee"
+            android:text="Basic Looks"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:text="Email:"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:text="Password:"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPassword"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#8C393737"
+
+            android:padding="4dp"
+            android:text="Sign In" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonSignIn"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonForgotPassword"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonSignIn"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:backgroundTint="#00988F8F"
+                android:text="@string/fpbtn"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonSignUp"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonForgotPassword"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:backgroundTint="#00988F8F"
+                android:onClick="openSignUp"
+                android:text="@string/signinbtn"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

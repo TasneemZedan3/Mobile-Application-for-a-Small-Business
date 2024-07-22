@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#805F5C5C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/bungee"
+            android:text="Basic Looks"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:text="First Name:"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerInParent="true"
+            />
+
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:text="Last Name:"
+            tools:layout_editor_absoluteX="107dp"
+            android:layout_centerInParent="true"
+            tools:layout_editor_absoluteY="80dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="348dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/surname"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:text="Email:"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:text="Password:"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+        <EditText
+            android:id="@+id/repeatpass"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:text="Repeate Password:"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repeatpass"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#8C393737"
+            android:padding="4dp"
+            android:layout_centerInParent="true"
+            android:text="SIGN UP"
+            app:cornerRadius="@dimen/cardview_compat_inset_shadow" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
